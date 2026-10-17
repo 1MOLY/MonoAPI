@@ -27,7 +27,7 @@ target_link_libraries(mono_api PRIVATE
 
 # -----------------------------------------------------------------------------
 
-set_target_properties(mono_api PROPERTIES
-	RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/.bin"
-	RUNTIME_OUTPUT_DIRECTORY_DEBUG "${CMAKE_SOURCE_DIR}/.bin"
+set_target_properties(${PROJECT_NAME} PROPERTIES
+	ARCHIVE_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/.bin"
+	ARCHIVE_OUTPUT_DIRECTORY_DEBUG   "${CMAKE_SOURCE_DIR}/.bin"
 )
